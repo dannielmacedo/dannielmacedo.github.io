@@ -3,8 +3,6 @@ title: Quem Somos
 layout: page
 ---
 
-# Quem Somos
-
 ## De laboratório a núcleo, conheça a história do Lavid
 
 Criado em 2003, o Laboratório de Aplicações de Vídeo Digital (LAVID) está integrado ao Departamento de Informática (DI) da Universidade Federal da Paraíba (UFPB). O laboratório surgiu da proposta de desenvolver projetos de pesquisa em hardware e software voltados às áreas de Vídeo Digital, Redes de Computadores, TV Digital e Interativa e Middleware.
