@@ -1,0 +1,5 @@
+collections: 
+  - destaque
+  - areas
+  - stats
+livereload: true

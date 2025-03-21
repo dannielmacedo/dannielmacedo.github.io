@@ -1,0 +1,95 @@
+--- 
+--- 
+@import url("https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css";
+@import 'core.min.css';
+
+:root {
+  --interactive-light: var(--blue-80);
+}
+
+.hero {
+  background: url('../img/hero.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stats,
+.contact {
+  background-image: url('../img/bg.svg');
+  background-color: var(--interactive-light);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2,
+  h6,
+  p,
+  a {
+    color: var(--color-dark);
+  }
+}
+
+.editais {
+  h6 {
+    color: var(--blue-50);
+  }
+}
+
+.noticias {
+  h6 {
+    color: var(--red-50);
+  }
+}
+
+.projects {
+  .br-card {
+    height: 100px;
+  }
+
+  .card-content {
+    color: var(--green-50);
+  }
+
+  h6 {
+    color: var(--green-50);
+  }
+
+  h2 {
+    color: var(--pure-black);
+  }
+}
+
+.fa {
+  .fa-envelope {
+    color: var(--blue-30);
+  }
+
+  .fa-phone {
+    color: var(--green-30);
+  }
+
+  .fa-camera {
+    color: var(--red-30);
+  }
+}
+
+.editais, .noticias {
+  h4 {
+    font-size: var(--font-size-scale-up-02);
+  }
+  p {
+    font-size: var(--font-size-scale-base);
+  }
+}
+
+.scroll-to-top {
+  bottom: 5px;
+  opacity: 0;
+  position: fixed;
+  right: 5px;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+}
