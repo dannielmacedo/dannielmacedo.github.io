@@ -13,5 +13,8 @@ layout: page
       </a>
     </div>
   </div>
+  {% unless forloop.last %}
+  <hr>
+  {% endunless %}
   {% endfor %}
 </div>

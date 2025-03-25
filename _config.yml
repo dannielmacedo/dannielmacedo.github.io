@@ -1,4 +1,40 @@
 collections:
-  - projetos
+  editais:
+    output: true
+  noticias:
+    output: true
+  projetos:
+    output: true
 
+defaults:
+  - 
+    scope:
+      path: ""
+      type: "pages"
+    values: 
+      layout: "page"
+  - 
+    scope:
+      path: "editais"
+      type: "pages"
+    values: 
+      layout: "edital"
+  - 
+    scope:
+      path: "noticias"
+      type: "posts"
+    values: 
+      layout: "noticia"
+  - 
+    scope:
+      path: "projetos"
+      type: "pages"
+    values: 
+      layout: "projeto"
+
+includes_dir: src/_includes
+layouts_dir : src/_layouts
+destination: src/_site
+
+show_drafts: true
 livereload: true

@@ -1,0 +1,19 @@
+<section class="projects container pt-4 pb-4">
+  <h6 class='pb-0 mb-0'>LINHAS DE PESQUISA</h6>
+  <h2 class='pt-0 mt-0'>Conheça nossas frentes de pesquisa</h2>
+  <div class="row mb-6">
+    {% for l in page.linhas %}
+    <div class="col-md">
+      <a href="/projetos">
+        <div class="br-card hover mb-0 d-flex align-items-center justify-content-center">
+          <div class="card-content text-center">
+            <i class="icon fa {{l.icon}} mb-2"></i>
+            <p class="label">{{l.label}}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
