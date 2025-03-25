@@ -1,5 +1,4 @@
-collections: 
-  - destaque
-  - areas
-  - stats
+collections:
+  - projetos
+
 livereload: true

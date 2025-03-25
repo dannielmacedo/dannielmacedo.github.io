@@ -1,0 +1,12 @@
+<section class="parceiros container pt-4 pb-4">
+  <div class="row mb-6">
+    {% for image in site.static_files %}
+    {% if image.path contains 'assets/img/parceiros' %}
+    {% assign image_alt = image.path | split: '/' | last | split: '.' | first %}
+    <div class="m-2">
+      <img src="{{ image.path | relative_url }}" alt="{{ image_alt }}"/>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

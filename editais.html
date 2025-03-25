@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<h1>Editais</h1>
+<div class="container mt-4">
+  {% for edital in site.data.editais %}
+  <div class="row mb-2">
+    <div class="col-10">
+      <p class="mb-0">Edital {{edital.num}}</p>
+      <a href="/editais/{{edital.file}}">
+        <h4 class="mt-0">{{edital.title}}</h4>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>

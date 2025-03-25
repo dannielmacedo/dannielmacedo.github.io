@@ -2,41 +2,30 @@
     <h6 class='p-0 mb-0'>NOTÍCIAS</h6>
     <h2 class='pt-0 mt-0'>Fique por dentro das novidades</h2>
     <div class="row mt-0">
-        <div class="col-6">
-            <a href="/noticias/zero-project-2024">
-            <img src="/assets/img/placeholder.svg" alt="placeholder" class="mb-2">
-            <p class="pb-0 mb-0">PRÊMIO INTERNACIONAL</p>
-            <h3 class="pt-0 mt-0">VLibras conquista premiação internacional Zero Project 2024</h3>
+        <div class="col">
+            {% assign destaque = site.posts.first %}
+            <a href="{{ destaque.url }}" />
+            <img src="/assets/img/noticias/{{destaque.imagem}}" alt="{{destaque.legenda}}" class="mb-2">
+            <p class="pb-0 mb-0">{{ destaque.chapeu | upcase }}</p>
+            <h3 class="pt-0 mt-0">{{ destaque.titulo }}</h3>
             </a>
         </div>
-        <div class="col-6">
+        <div class="col">
+            {% for noticia in site.posts offset:1 limit:3 %}
             <div class="row mb-3">
                 <div class="col-4">
-                    <img src="/assets/img/placeholder.svg" alt="placeholder" class="mr-2">
+                    <a href="{{ noticia.url }}" class="d-block" />
+                    <img src="/assets/img/noticias/{{noticia.imagem}}" alt="{{noticia.legenda}}" class="mr-2">
+                    </a>
                 </div>
-                <div class="col-8">
-                    <p class="pb-0 mb-0">ACESSIBILIDADE</p>
-                    <h4 class="pt-0 mt-0">Agência Brasil implementa VLibras e facilita o acesso de pessoas surdas</h4>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-4">
-                    <img src="/assets/img/placeholder.svg" alt="placeholder" class="mr-2">
-                </div>
-                <div class="col-8">
-                    <p class="pb-0 mb-0">ACESSIBILIDADE</p>
-                    <h4 class="pt-0 mt-0">Agência Brasil implementa VLibras e facilita o acesso de pessoas surdas</h4>
+                <div class="col-8 p-0">
+                    <p class="pb-0 mb-0">{{ noticia.chapeu | upcase }}</p>
+                    <a href="{{ noticia.url }}" />
+                    <h4 class="pt-0 mt-0">{{ noticia.titulo }}</h4>
+                    </a>
                 </div>
             </div>
-            <div class="row mb-3">
-                <div class="col-4">
-                    <img src="/assets/img/placeholder.svg" alt="placeholder" class="mr-2">
-                </div>
-                <div class="col-8">
-                    <p class="pb-0 mb-0">ACESSIBILIDADE</p>
-                    <h4 class="pt-0 mt-0">Agência Brasil implementa VLibras e facilita o acesso de pessoas surdas</h4>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
     <br /><br />

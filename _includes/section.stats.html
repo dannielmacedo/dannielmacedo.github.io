@@ -6,22 +6,12 @@
         </div>
         <div class="col-12 col-md-4">
             <div class="d-flex flex-wrap">
+                {% for stat in site.data.stats %}
                 <div class="col-6">
-                    <h2 class="pb-0 mb-0">20+</h2>
-                    <p>anos de atuação</p>
+                    <h2 class="pb-0 mb-0">{{stat.num}}+</h2>
+                    <p>{{stat.label}}</p>
                 </div>
-                <div class="col-6">
-                    <h2 class="pb-0 mb-0">100+</h2>
-                    <p>projetos desenvolvidos</p>
-                </div>
-                <div class="col-6">
-                    <h2 class="pb-0 mb-0">10+</h2>
-                    <p>prêmios recebidos</p>
-                </div>
-                <div class="col-6">
-                    <h2 class="pb-0 mb-0">50+</h2>
-                    <p>pesquisadores</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
