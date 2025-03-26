@@ -7,6 +7,8 @@ imagem: wikilibras.jpg
 legenda: Videoaulas de capacitação para utilização da plataforma também foram lançadas.
 
 publicada_em: 2020-11-09
+
+layout: noticia
 ---
 
 O Laboratório de Aplicações em Vídeo Digital (LAVID) relançou a plataforma WikiLibras com mais de 17 mil sinais em Língua Brasileira de Sinais (Libras). Videoaulas de capacitação para utilização da plataforma também foram lançadas. O relançamento da ferramenta, na tarde desta quinta-feira (10), foi transmitido por meio das redes sociais do Ministério da Mulher, da Família e dos Direitos Humanos.

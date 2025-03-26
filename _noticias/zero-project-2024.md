@@ -7,6 +7,8 @@ imagem: zero-project-2024.jpg
 legenda: Servidores da Universidade Federal da Paraíba (UFPB) recebem prêmio Project Zero 2024.
 
 publicada_em: 2024-02-23
+
+layout: noticia
 ---
 
 A Suíte VLibras, uma solução digital voltada para tornar a internet mais acessível para pessoas surdas, foi uma das experiências inclusivas vencedoras do Prêmio Projeto Zero 2024. O resultado da premiação foi divulgado no último domingo (3), o Dia internacional da Pessoa com Deficiência. O VLibras é o resultado de uma parceria entre o Ministério da Gestão e da Inovação em Serviços Públicos (MGI), o Ministério dos Direitos Humanos e da Cidadania (MDHC) e a Universidade Federal da Paraíba (UFPB), através do Laboratório de Aplicações de Vídeo Digital (LAVID).

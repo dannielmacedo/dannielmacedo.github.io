@@ -7,29 +7,10 @@ collections:
   projetos:
     output: true
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: pages
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "noticias" # an empty string here means all files in the project
-      type: pages
-    values:
-      layout: "noticia"
-  -
-    scope:
-      path: "projetos" # an empty string here means all files in the project
-      type: pages
-    values:
-      layout: "projeto"
-
 includes_dir: src/_includes
 layouts_dir : src/_layouts
 destination: src/_site
 
 show_drafts: true
 livereload: true
+debug: true

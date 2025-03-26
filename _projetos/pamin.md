@@ -6,7 +6,9 @@ inicio: Março de 2011
 fim: Dezembro de 2016
 area: Multimídia e Jogos
 imagem: pamin.jpg
-url: http://pamin.lavid.ufpb.br/
+site: http://pamin.lavid.ufpb.br/
+
+layout: projeto
 ---
 
 O Patrimônio, Memória e Interatividade (Pamin) parte da constatação de que o patrimônio cultural e artístico local é pouco conhecido da sociedade, mesmo quando ele é objeto de políticas públicas: a visão elitista corrente da “arte” e “cultura” desautoriza o “popular” no reconhecimento e definição de suas próprias estratégias, dificultando a expressão de suas experiências e visões de mundo socialmente inscritas.
