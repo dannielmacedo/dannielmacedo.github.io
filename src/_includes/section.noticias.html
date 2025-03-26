@@ -1,0 +1,33 @@
+<section class="noticias container">
+    <h6 class='p-0 mb-0'>NOTÍCIAS</h6>
+    <h2 class='pt-0 mt-0'>Fique por dentro das novidades</h2>
+    <div class="row mt-0">
+        <div class="col">
+            {% assign noticias = site.noticias | sort: 'publicada_em' | reverse %}
+            {% assign destaque = noticias.first %}
+            <a href="{{ destaque.url }}" />
+            <img src="/imagens/noticias/{{destaque.imagem}}" alt="{{destaque.legenda}}" class="mb-2">
+            <p class="pb-0 mb-0">{{ destaque.chapeu | upcase }}</p>
+            <h3 class="pt-0 mt-0">{{ destaque.titulo }}</h3>
+            </a>
+        </div>
+        <div class="col">
+            {% for noticia in noticias offset:1 limit:3 %}
+            <div class="row mb-3">
+                <div class="col-4">
+                    <a href="{{ noticia.url }}" class="d-block" />
+                    <img src="/imagens/noticias/{{noticia.imagem}}" alt="{{noticia.legenda}}" class="mr-2">
+                    </a>
+                </div>
+                <div class="col-8 p-0">
+                    <p class="pb-0 mb-0">{{ noticia.chapeu | upcase }}</p>
+                    <a href="{{ noticia.url }}" />
+                    <h4 class="pt-0 mt-0">{{ noticia.titulo }}</h4>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <br /><br />
+</section>

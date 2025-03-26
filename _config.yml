@@ -1,5 +1,14 @@
-collections: 
-  - destaque
-  - areas
-  - stats
+collections:
+  editais:
+    output: true
+  noticias:
+    output: true
+  projetos:
+    output: true
+
+includes_dir: src/_includes
+layouts_dir : src/_layouts
+destination: src/_site
+
+show_drafts: true
 livereload: true

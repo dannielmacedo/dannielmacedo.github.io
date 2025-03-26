@@ -1,0 +1,24 @@
+---
+layout: page
+---
+<h1 class="mb-7x">{{page.titulo}}__</h1>
+{% assign projetos = site.projetos %}
+{% for projeto in projetos %}
+<div class="row list mb-3">
+    <div class="col-10">
+        <span class="subtitulo pb-0 mb-0">{{ projeto.chapeu | upcase }}</span>
+        <a href="{{ projeto.url }}" />
+        <h2 class="titulo pt-0 mt-0 mb-0">{{ projeto.titulo }}</h2>
+        <p><span class="data">{{projeto.date|date:"%d/%m/%Y"}} -</span> {{projeto.resumo}}</p>
+        </a>
+    </div>
+    <div class="col-2">
+        <a href="{{ projeto.url }}" />
+        <img src="/imagens/projetos/{{projeto.imagem}}" class="mr-2" alt="{{projeto.titulo}}">
+        </a>
+    </div>
+</div>
+{% unless forloop.last %}
+<hr>
+{% endunless %}
+{% endfor %}

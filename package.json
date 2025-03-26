@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@govbr-ds/core": "^3.6.1"
+    "@govbr-ds/core": "^3.6.1",
+    "clipboard": "^2.0.11"
   }
 }
