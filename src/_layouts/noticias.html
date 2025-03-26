@@ -1,0 +1,46 @@
+---
+layout: page
+---
+
+<h1>Editais</h1>
+<div class="container mt-4">
+  {% for edital in site.data.editais %}
+  <div class="row mb-2">
+    <div class="col-10">
+      <p class="mb-0">Edital {{edital.num}}</p>
+      <a href="/editais/{{edital.file}}">
+        <h4 class="mt-0">{{edital.title}}</h4>
+      </a>
+    </div>
+  </div>
+  {% unless forloop.last %}
+  <hr>
+  {% endunless %}
+  {% endfor %}
+</div>
+
+
+---
+layout: page
+---
+<h1 class="mb-7x">{{page.titulo}}</h1>
+{% assign noticias = site.noticias | sort: 'publicada_em' | reverse %}
+{% for noticia in noticias %}
+<div class="row list mb-3">
+    <div class="col-10">
+        <span class="subtitulo pb-0 mb-0">{{ noticia.chapeu | upcase }}</span>
+        <a href="{{ noticia.url }}" />
+        <h2 class="titulo pt-0 mt-0 mb-0">{{ noticia.titulo }}</h2>
+        <p><span class="data">{{noticia.date|date:"%d/%m/%Y"}} -</span> {{noticia.resumo}}</p>
+        </a>
+    </div>
+    <div class="col-2">
+        <a href="{{ projeto.url }}" />
+        <img src="/imagens/noticias/{{noticia.imagem}}" class="mr-2" alt="{{noticia.legenda}}">
+        </a>
+    </div>
+</div>
+{% unless forloop.last %}
+<hr>
+{% endunless %}
+{% endfor %}

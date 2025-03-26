@@ -6,9 +6,7 @@ resumo: Sistema de tradução do português para a Língua Brasileira de Sinais,
 imagem: vlibras.jpg
 legenda: Guga reúne-se aos avatares Ícaro (masculino) e Hosana (feminino), com os quais os surdos traduzem para Libras não só as páginas do governo federal, reunidas na plataforma GOV.BR, mas páginas de empresas que já aderiram à ferramenta.
 
-date: 2021-12-09
-
-layout: noticia
+publicada_em: 2021-12-09
 ---
 
 O VLibras , ferramenta digital criada para facilitar a vida dos surdos no país, ampliou em mais de 30% nos últimos dois anos o número de sinais para tradução do português para a Língua Brasileira de Sinais (Libras) e lança nesta sexta-feira (3/12) – quando se comemora o Dia Internacional da Pessoa com Deficiência – um avatar voltado ao público infantil, o Guga. O sistema de tradução hoje dispõe de 21 mil sinais e foi desenvolvido pelo Ministério da Economia em parceria com a Universidade Federal da Paraíba (UFPB) e a Rede Nacional de Ensino e Pesquisa.
