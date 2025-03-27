@@ -1,6 +1,9 @@
 ---
 titulo: PAMIN
 subtitulo: Patrimônio, memória e interatividade
+
+resumo: Conectado a experiências locais – comunidades em realidades de criação e produção -, o Pamin colabora para a “emergência” de grupos, pessoas, processos e movimentos artísticos e culturais em atividade no Brasil, democratizando o acesso à suas produções.
+
 financiadores: RNP
 inicio: Março de 2011
 fim: Dezembro de 2016

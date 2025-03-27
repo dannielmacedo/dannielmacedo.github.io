@@ -122,10 +122,6 @@ article {
   }
 
   .list {
-    h2 {
-      font-size: var(--font-size-scale-up-03);
-      padding-bottom: 0;
-    }
     .subtitulo {
       color: var(--gray-60);
     }
@@ -150,6 +146,18 @@ article {
     object-fit: cover;
   }
 }
+
+img {
+  &.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+  }
+}
+
 .scroll-to-top {
   bottom: 5px;
   opacity: 0;
