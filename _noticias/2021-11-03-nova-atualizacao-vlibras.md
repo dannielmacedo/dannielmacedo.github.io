@@ -1,12 +1,12 @@
 ---
-chapeu: Acessibilidade
-titulo: LAVID relança plataforma WikiLibras com mais de 17 mil sinais em Libras
+chapeu: VLIBRAS
+titulo: LAVID relança plataforma WikiLibras com mais de 17 mil sinais em Língua Brasileira de Sinais
 resumo: Colaboradores, animadores e especialistas poderão criar sinais de modo automatizado.
 
-imagem: wikilibras.jpg
+imagem: wikilibras-2.jpg
 legenda: Videoaulas de capacitação para utilização da plataforma também foram lançadas.
 
-publicada_em: 2020-11-09
+publicada_em: 2021-11-03
 
 layout: noticia
 ---
