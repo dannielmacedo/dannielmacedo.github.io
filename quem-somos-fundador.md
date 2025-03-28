@@ -1,6 +1,5 @@
 ---
 permalink: /quem-somos/fundador/
-layout: page
 ---
 
 # Fundador

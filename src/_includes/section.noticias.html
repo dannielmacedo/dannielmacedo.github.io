@@ -5,8 +5,8 @@
         <div class="col">
             {% assign noticias = site.noticias | sort: 'publicada_em' | reverse %}
             {% assign destaque = noticias.first %}
-            <a href="{{ destaque.url }}" />
-            <img src="/imagens/noticias/{{destaque.imagem}}" alt="{{destaque.legenda}}" class="mb-2">
+            <a href="{{ destaque.url }}" class="no-underline" />
+            <img src="/imagens/noticias/{{destaque.imagem}}" alt="{{destaque.legenda}}" class="mb-2 rounder-md">
             <p class="pb-0 mb-0">{{ destaque.chapeu | upcase }}</p>
             <h3 class="pt-0 mt-0">{{ destaque.titulo }}</h3>
             </a>
@@ -15,8 +15,8 @@
             {% for noticia in noticias offset:1 limit:3 %}
             <div class="row mb-3">
                 <div class="col-4">
-                    <a href="{{ noticia.url }}" class="d-block" />
-                    <img src="/imagens/noticias/{{noticia.imagem}}" alt="{{noticia.legenda}}" class="mr-2">
+                    <a href="{{ noticia.url }}" class="d-block no-underline" />
+                    <img src="/imagens/noticias/{{noticia.imagem}}" alt="{{noticia.legenda}}" class="mr-2 rounder-md">
                     </a>
                 </div>
                 <div class="col-8 p-0">

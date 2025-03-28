@@ -1,10 +1,12 @@
 ---
 titulo: Videocolaboração 4K
 subtitulo: Evolução de plataformas de videocolaboração 4K
+resumo: O objetivo geral desse projeto é o desenvolvimento de um serviço baseado em software para prover videoconferências UHD ponto-a-ponto e multi-ponto.
 financiadores: RNP
 inicio: Fevereiro/2015
 fim: Janeiro/2016
 area: Multimídia e Jogos
+imagem: 
 
 layout: projeto
 ---

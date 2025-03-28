@@ -3,6 +3,7 @@ collections:
     output: true
   noticias:
     output: true
+    sort_by: publicada_em
   projetos:
     output: true
 
@@ -12,3 +13,4 @@ destination: src/_site
 
 show_drafts: true
 livereload: true
+debug: true

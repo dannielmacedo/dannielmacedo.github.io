@@ -1,21 +1,21 @@
 ---
 layout: page
 ---
-<h1 class="mb-7x">{{page.titulo}}__</h1>
+<h1 class="mb-7x">{{page.titulo}}</h1>
 {% assign projetos = site.projetos %}
 {% for projeto in projetos %}
 <div class="row list mb-3">
     <div class="col-10">
-        <span class="subtitulo pb-0 mb-0">{{ projeto.chapeu | upcase }}</span>
         <a href="{{ projeto.url }}" />
-        <h2 class="titulo pt-0 mt-0 mb-0">{{ projeto.titulo }}</h2>
-        <p><span class="data">{{projeto.date|date:"%d/%m/%Y"}} -</span> {{projeto.resumo}}</p>
+        <h2 class="text-up-03 text-weight-medium pt-0 pb-2 mt-0 mb-0">{{ projeto.titulo }}</h2>
+        <h3 class="text-up-01 text-gray-50 text-weight-medium m-0">{{ projeto.subtitulo | upcase }}</h3>
+        <p>{{projeto.resumo}}</p>
         </a>
     </div>
     <div class="col-2">
-        <a href="{{ projeto.url }}" />
-        <img src="/imagens/projetos/{{projeto.imagem}}" class="mr-2" alt="{{projeto.titulo}}">
-        </a>
+        <a href="{{ projeto.url }}" class="d-block" />
+        <img src="/imagens/projetos/{{projeto.imagem | default:"default.svg" }}" class="rounder-md" alt="{{projeto.titulo}}">
+        </a>        
     </div>
 </div>
 {% unless forloop.last %}

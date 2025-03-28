@@ -1,10 +1,14 @@
 ---
 titulo: GTAAAS
 subtitulo: GTAaaS – Acessibilidade como um Serviço (Acessibility as a Service)
+
+resumo: Neste projeto exploraremos o conceito de Acessibilidade como um Serviço, implementando e testando um serviço que torne possível o acesso a conteúdo digital para usuários especiais.
+
 financiadores: RNP
 inicio: Novembro/2011
 fim: Novembro/2015
 area: Multimídia e Jogos
+imagem: 
 
 layout: projeto
 ---

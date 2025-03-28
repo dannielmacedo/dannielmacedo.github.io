@@ -4,8 +4,8 @@ layout: page
 <article class="noticia container-lg mt-6 mb-6">
     <h6 class="mb-0">{{ page.chapeu | upcase }}</h6>
     <h1 class="mb-2">{{ page.titulo | escape }}</h1>
-    <p>{{ page.resumo | escape }}</p>
-    <p class="date">Publicada em {{ page.publicada_em }} {% if page.atualizada_em %} ・Atualizada em {{page.atualizada_em}} {% endif %} </p>
+    <p class="mt-4">{{ page.resumo | escape }}</p>
+    <p class="date">Publicada em {{ page.publicada_em | date:"%d/%m/%Y" }} {% if page.atualizada_em %} ・Atualizada em {{page.atualizada_em}} {% endif %} </p>
     <p class="share">
         <a href="https://api.whatsapp.com/send?text={{page.url|absolute_url}}"><i class="fab fa-whatsapp"></i> Compartilhar</a>
         <a href="{{page.url|absolute_url}}" class="link-clipboard" onclick="event.preventDefault()"><i class="fas fa-link"></i> Copiar link</a>
@@ -14,7 +14,7 @@ layout: page
         </script>
     </p>
     <figure class="col-8 m-auto pb-6">
-        <img src="img/{{page.imagem}}" alt="{{ page.title }}" width="100%" />
+        <img src="/imagens/noticias/{{page.imagem}}" alt="{{ page.title }}" width="100%" />
         <figcaption>{{ page.legenda }}</figcaption>
     </figure>
 

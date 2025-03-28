@@ -1,22 +1,30 @@
 ---
-layout: default
+layout: page
 ---
 <article class="projeto container-lg mt-6 mb-6">
-    <h1 class="mb-2">{{ page.titulo | escape }}</h1>
-    <h2 class="mb-2">{{ page.subtitulo | escape }}</h1>
-    <p>{{ page.resumo | escape }}</p>
-    <p class="share">
-        <a href="https://api.whatsapp.com/send?text={{page.url|absolute_url}}"><i class="fab fa-whatsapp"></i> Compartilhar</a>
-        <a href="{{page.url|absolute_url}}" class="link-clipboard" onclick="event.preventDefault()"><i class="fas fa-link"></i> Copiar link</a>
-        <script>new ClipboardJS('.link-clipboard', { text: function(trigger) { return trigger.getAttribute('href'); }
-            });
-        </script>
-    </p>
-    <figure class="col-8 m-auto pb-6">
-        <img src="img/{{page.imagem}}" alt="{{ page.title }}" width="100%" />
-        <figcaption>{{ page.legenda }}</figcaption>
-    </figure>
-
+    <div class="row">
+        <div class="col">
+            <h1 class="mb-2">{{ page.titulo | escape }}</h1>
+            <h2 class="mb-2">{{ page.subtitulo | escape }}</h1>
+            <p class="share">
+                <a href="https://api.whatsapp.com/send?text={{page.url|absolute_url}}"><i class="fab fa-whatsapp"></i> Compartilhar</a>
+                <a href="{{page.url|absolute_url}}" class="link-clipboard" onclick="event.preventDefault()"><i class="fas fa-link"></i> Copiar link</a>
+                <script>new ClipboardJS('.link-clipboard', { text: function(trigger) { return trigger.getAttribute('href'); }
+                    });
+                </script>
+            </p>
+        </div>
+        <div class="col-2">
+            <img src="/imagens/projetos/{{page.imagem}}" alt="{{page.title}}"/>
+        </div>
+    </div>
+    
     {{ content }}
+
+    <p><strong>Financiadores: </strong>{{ page.financiadores }}</p>
+    <p><strong>Inicio: </strong>{{ page.inicio }}</p>
+    <p><strong>Fim: </strong>{{ page.fim }}</p>
+    <p><strong>Area: </strong>{{ page.area }}</p>
+    {% if page.site %}<p><strong>Site: </strong>{{ page.site }}</p>{% endif %}
 
 </article>

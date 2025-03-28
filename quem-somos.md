@@ -1,5 +1,5 @@
 ---
-layout: page
+permalink: /quem-somos/
 ---
 
 # Quem Somos

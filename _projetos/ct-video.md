@@ -1,6 +1,7 @@
 ---
 titulo: CT-Video
 subtitulo: Comitê Técnico de Videocolaboração
+resumo: Este Comitê irá estudar o futuro das aplicações em videocolaboração, nas mais variadas áreas de pesquisa, desenvolvimento e inovação. Este CT irá realizar uma prospecção tecnológica na área de aplicações de vídeo e colaboração remota, visando identificar protocolos de distribuição, taxas de transmissão e requisitos de rede.
 financiadores: RNP
 inicio: Março/2014
 fim: Dezembro/2015
