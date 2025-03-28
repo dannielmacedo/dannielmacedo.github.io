@@ -1,7 +1,7 @@
 ---
 chapeu: Reconhecimento Internacional
 titulo:  VLibras conquista prêmio internacional Zero Project 2024
-resumo: Premiação promovida pela Fundação Essl da ustria, reconhece iniciativas que removem barreiras para pessoas com deficiência.
+resumo: Ao todo, foram premiadas 77 experiências, que participarão, em fevereiro de 2024, de um evento na sede das Nações Unidas, em Viena, na Áustria. A premiação é organizada pela Fundação Essl, instituição austríaca que busca construir um mundo sem barreiras para o exercício dos direitos das pessoas com deficiência.
 
 imagem: zero-project-2024.jpg
 legenda: Servidores da Universidade Federal da Paraíba (UFPB) recebem prêmio Project Zero 2024.
