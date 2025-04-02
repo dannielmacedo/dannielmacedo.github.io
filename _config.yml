@@ -7,10 +7,17 @@ collections:
   projetos:
     output: true
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "page"
+    values:
+      layout: "page"
+
 includes_dir: src/_includes
 layouts_dir : src/_layouts
 destination: src/_site
 
-show_drafts: true
 livereload: true
 debug: true
