@@ -192,3 +192,38 @@ img {
 .scroll-to-top.show {
   opacity: 1;
 }
+
+.cabecalho-linha {
+  padding-bottom: 24px;
+  
+  .outstanding-header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0 !important;
+    text-transform: uppercase;
+
+  .outstanding-title {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    margin: 0 !important;
+    padding: 0 12px;
+    white-space: nowrap;
+  }
+
+  &::after,
+    &::before {
+      background: #ccc;
+      content: '';
+      height: 1px;
+      width: 100%;
+    }
+  }
+}

@@ -1,10 +1,17 @@
 <section class="parceiros container pt-4 pb-4">
   <div class="row justify-content-around align-items-center mb-6">
+    <div class="column col-md-12 " data-panel="">
+      <div class="tile cabecalho-linha">
+        <div class="outstanding-header tile-content">
+          <h6 class="outstanding-title">Parceiros</h6>
+        </div>
+      </div>
+    </div>
     {% for image in site.static_files %}
     {% if image.path contains 'imagens/parceiros' %}
     {% assign image_alt = image.path | split: '/' | last | split: '.' | first %}
     <div class="m-1">
-      <img src="{{ image.path | relative_url }}" alt="{{ image_alt }}"/>
+      <img src="{{ image.path | relative_url }}" alt="{{ image_alt }}" />
     </div>
     {% endif %}
     {% endfor %}
